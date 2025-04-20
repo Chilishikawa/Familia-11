@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "# Familia-11" >> README.md
+rm -rf .git
 git init
 git add README.md
 git add .
