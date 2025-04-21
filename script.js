@@ -69,3 +69,14 @@ function cambiarColor() {
 
 // Cambiar color cada 1 segundo
 setInterval(cambiarColor, 1000);
+
+const enlaces = document.querySelectorAll('.letra-animada');
+  const audio = document.querySelector('.audio-clip');
+
+  enlaces.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      audio.currentTime = 0; // reinicia el audio cada vez
+      audio.play();
+    });
+  });
