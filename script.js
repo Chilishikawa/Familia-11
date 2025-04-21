@@ -61,22 +61,20 @@ const letras = document.querySelectorAll(".letra-animada");
 
 function cambiarColor() {
     letras.forEach(letra => {
-      const randomColor = coloresWeb[Math.floor(Math.random() * coloresWeb.length)];
-      letra.style.color = randomColor;
+        const randomColor = coloresWeb[Math.floor(Math.random() * coloresWeb.length)];
+        letra.style.color = randomColor;
     });
-  }
+}
 
 
 // Cambiar color cada 1 segundo
 setInterval(cambiarColor, 1000);
 
-const enlaces = document.querySelectorAll('.letra-animada');
-  const audio = document.querySelector('.audio-clip');
+const enlace = document.getElementById('carrera-futuro');
+const audio = document.getElementById('audio-clip');
 
-  enlaces.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      audio.currentTime = 0; // reinicia el audio cada vez
-      audio.play();
-    });
-  });
+enlace.addEventListener('click', (e) => {
+    e.preventDefault();
+    audio.currentTime = 0; // reinicia el audio cada vez
+    audio.play();
+});
