@@ -9,13 +9,46 @@ body {
     flex-direction: column;
 }
 
+.artes-estadisticas {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.carrera-del-futuro {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cianware-noticias {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7rem;
+    font-family: "Romanesco" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     background-color: #003366;
     color: white;
     padding: 20px;
 }
 
-h1, h2 {
+.header-mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    color: white;
+    padding: 1rem;
+}
+
+h1,
+h2 {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -26,6 +59,20 @@ h1 {
 
 h2 {
     font-size: 24px;
+}
+
+.letra-animada {
+    all: unset;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.mensaje-a-los-niños {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
@@ -66,7 +113,7 @@ footer {
     all: initial;
     margin: 0;
     margin-left: 1rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .menu-item {
